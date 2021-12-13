@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #002033;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+}
+.container .loader{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 20px solid transparent;
+    border-bottom: 20px solid aqua;
+    border-right: 20px solid aqua;
+    transform: rotate(45deg);
+    animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.container .loader .ball{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: ballAnimate 4s ease-in-out infinite;
+}
+.container .loader .ball::before{
+    content: '';
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 55%;
+    right: 18px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+@keyframes ballAnimate {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
