@@ -1,6 +1,8 @@
 
 # Perpetual animation effect using pure CSS
 
+![Screenshot (107)](https://user-images.githubusercontent.com/94067118/145848169-6b5cc4dd-1559-46be-9bb7-bfd1da17b4fe.png)
+
 This is a simple and easiest project using HTML & pure CSS. In this project, i created one perpetual effect animation using pure CSS. So, Checkout this project and thank you for visit!
 
 
